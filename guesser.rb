@@ -1,9 +1,7 @@
 min = 0
 max = 1000
 tries = 0
-guess = max / 2
-upper = max
-lower = min
+guess = 501
 tries = 0
 
 puts "Think of a number between 1 and 1000. I will be able to guess in 10 tries of less."
@@ -13,15 +11,15 @@ while true
   answer = gets.chomp
 
   if answer == "h"
-    lower = guess + 1
-    guess = ((upper - lower) / 2) + lower
+    min = guess + 1
+    guess = ((max - min) / 2) + min
     puts "Is your number #{guess}?"
     tries += 1
   end
 
   if answer == "l"
-    upper = guess - 1
-    guess = ((lower - upper) /2) + upper
+    max = guess - 1
+    guess = ((min - max) / 2) + max
     puts "is your number #{guess}?"
     tries += 1
   end
