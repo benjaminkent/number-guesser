@@ -2,7 +2,6 @@ min = 0
 max = 1000
 tries = 0
 guess = 501
-tries = 0
 
 puts "Think of a number between 1 and 1000. I will be able to guess in 10 tries of less."
 puts "Is your number 501? (y)es, (h)igher, or (l)ower."
