@@ -25,6 +25,9 @@ while true
 
   if answer == "y"
     puts "I got it in #{tries} tries!"
+    sleep 3
+    system("clear")
+    system("ruby guesser.rb")
     break
   end
 end
